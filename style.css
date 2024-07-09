@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html,body{
+	font-family: 'Roboto',sans-serif;
+	height: 100%;
+}
+body{
+	background: linear-gradient(top,#ddd 0%,#f0f0f0 40%);
+	transform: perspective(800px);
+	transform-style: preserve-3d;
+	background-image: url('https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+
+}
+.wrap{
+	position: absolute;
+	perspective: 600px;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+.card{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 300px;
+	height: 450px;
+	z-index: 1;
+	position: absolute;
+	border-radius: 10px;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-image:url('https://images.pexels.com/photos/848573/pexels-photo-848573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') ;
+	background-size: 450%;
+
+}
+.card-front , .card-title, .card-subtitle{
+	position: absolute;
+	color: #fff;
+	transform-style: preserve-3d;
+}
+.card-front{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background-color:rgba(0,0,0,.1) ;
+}
+.card-title{
+	font-weight: 700;
+	text-align: left;
+	left: 30px;
+	bottom: 140px;
+	font-size: 35px;
+	line-height: 30px;
+	text-shadow: 0 5px 8px rgba(0,0,0,0.65);
+	transform: translateZ(0px);
+	overflow: hidden;
+	margin: 0;
+	width: 80%;
+}
+.card-subtitle{
+	font-weight: normal;
+	text-align: left;
+	left: 30px;
+	bottom: 80px;
+	width: 80%;
+	font-size: 25px;
+	line-height: 20px;
+	text-shadow: 0 3px 6px rgba(0,0,0,0.8);
+	transform: translateZ(0px);
+}
